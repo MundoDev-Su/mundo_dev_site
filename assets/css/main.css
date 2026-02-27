@@ -17,50 +17,44 @@
   --nav-font: "Poppins", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors */
 :root {
   --background-color: #ffffff;
-  /* Background color for the entire website, including individual sections */
-  --default-color: #444444;
-  /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37517e;
-  /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #47b2e4;
-  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #333333;
+  /* Turquesa da logo */
+  --heading-color: #0FA3B1;
+  /* Laranja principal da logo */
+  --accent-color: #F5A000;
   --surface-color: #ffffff;
-  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff;
-  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors */
 :root {
-  --nav-color: #ffffff;
-  /* The default color of the main navmenu links */
-  --nav-hover-color: #47b2e4;
-  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #333333;
+  /* Hover usando Turquesa */
+  --nav-hover-color: #1BB3C4;
   --nav-mobile-background-color: #ffffff;
-  /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff;
-  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444;
-  /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #47b2e4;
-  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #333333;
+  /* Hover dropdown usando Laranja */
+  --nav-dropdown-hover-color: #F5A000;
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Color Presets */
 
 .light-background {
-  --background-color: #f5f6f8;
+  --background-color: #f9f9f9;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #37517e;
+  /* Fundo escuro inspirado no fundo da logo */
+  --background-color: #000000;
+
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #4668a2;
+  --heading-color: #4EC3CC;
+  --surface-color: #0FA3B1;
   --contrast-color: #ffffff;
 }
 
@@ -103,24 +97,24 @@ h6 {
 ------------------------------*/
 
 .feCarousel {
-    background: #f8f9fa;
-    padding: 10px;
-    border-radius: 10px;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .feCarousel .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feCarousel img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: contain;
-    border-radius: 8px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 /* PHP Email Form Messages
@@ -179,7 +173,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #3d4d6a;
+  --background-color: #4EC3CC;
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
@@ -224,7 +218,19 @@ h6 {
 }
 
 
+.btn-md {
+  background-color: #F5A000;
+  border-color: #F5A000;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
 
+.btn-md:hover {
+  background-color: #F28C00;
+  border-color: #F28C00;
+  color: #ffffff;
+}
 
 @media (max-width: 1200px) {
   .header .logo {
@@ -550,6 +556,16 @@ h6 {
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  transition: 0.3s ease;
+}
+
+.footer-brand:hover .footer-logo {
+  transform: scale(1.05);
 }
 
 .footer .footer-newsletter {
