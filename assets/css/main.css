@@ -101,6 +101,30 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
+
+.feCarousel {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.feCarousel .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feCarousel img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* PHP Email Form Messages
+------------------------------*/
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -198,6 +222,9 @@ h6 {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+
+
+
 
 @media (max-width: 1200px) {
   .header .logo {
